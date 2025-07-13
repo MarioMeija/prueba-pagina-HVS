@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(109, 156, 160);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+p {
+    color: rgb(0, 0, 0); 
+    font-size: 1.2em;
+}
+
+img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
