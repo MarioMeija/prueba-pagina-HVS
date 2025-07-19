@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(109, 156, 160);
+    background-color: rgb(79, 127, 212);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -8,13 +8,22 @@ body {
     margin: 0 auto;
 }
 
+h1 {
+    color: rgb(121, 190, 109);
+    background-color: rgb(79, 127, 212);
+    text-align: center;
+    font-size: 3.5em;
+    margin: 0;
+    padding: 20px;
+}
+
 p {
-    color: rgb(0, 0, 0); 
+    color: rgb(0, 0, 0);
     font-size: 1.2em;
 }
 
 img {
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-      }
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
