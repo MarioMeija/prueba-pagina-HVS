@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <title>Document</title>
+ <link rel="stylesheet" href="hvs.css">
+
+</head>
+<body>
+    <IMG src="IMG/portada1.jpg" alt="imagen de fondo"></IMG>
+<h1>HOSPITAL VETERINARIO DEL SUR</h1>
+
+
+<!-- inicio del menu principal -->
+<a class="btn btn-primary" onclick="location.href='index.html'" role="button">inicio</a>
+<button class="btn btn-primary" onclick="location.href='servicios.html'" type="submit">servicios</button>
+<input class="btn btn-primary" type="button" value="productos">
+<input class="btn btn-primary" onclick="location.href='contactanos.html'" type="submit" value="contactanos">
+
+    <!-- fin del menu principal -->
+
+<h2>Siguenos en nuestras redes sociales</h2>
+
+<div>
+    <a href="https://www.facebook.com/HospitalVetSur" target="_blank">Facebook</a>
+    <a href="https://www.twitter.com" target="_blank">Twitter</a>
+    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+</div>
+
+<!-- inicio del formulario de contacto -->
+    <h2>Contacto</h2>
+    <form>
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+<!-- fin del formulario de contacto -->
+
+
+</body>
+</html>
