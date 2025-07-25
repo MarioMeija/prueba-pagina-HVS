@@ -1,65 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
- <link rel="stylesheet" href="hvs.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="hvs.css">
 
 </head>
+
 <body>
     <IMG src="IMG/portada1.jpg" alt="imagen de fondo"></IMG>
-<h1>HOSPITAL VETERINARIO DEL SUR</h1> 
+    <h1>HOSPITAL VETERINARIO DEL SUR</h1>
 
-<!-- inicio del menu principal -->
-<a class="btn btn-primary" onclick="location.href='index.html'" role="button">inicio</a>
-<button class="btn btn-primary" onclick="location.href='servicios.html'" type="submit">servicios</button>
-<input class="btn btn-primary" type="button" value="productos">
-<input class="btn btn-primary" onclick="location.href='contactanos.html'" type="submit" value="contactanos">
+    <!-- inicio del menu principal -->
+    <a class="btn btn-primary" onclick="location.href='index.html'" role="button">inicio</a>
+    <button class="btn btn-primary" onclick="location.href='servicios.html'" type="submit">servicios</button>
+    <input class="btn btn-primary" type="button" onclick="location.href='productos.html'" value="productos">
+    <input class="btn btn-primary" onclick="location.href='contactanos.html'" type="submit" value="contactanos">
 
     <!-- fin del menu principal -->
 
-<div style="display: flex; align-items: center; justify-content: center; margin-top: 40px;">
-    <div style="margin: 10px; text-align: justify;">
-        <img src="IMG/Servicios/consulta.png" alt="Consulta general">
-        <h3 style="text-align: center;">Consulta general</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias iste illo in sit incidunt sequi minus officiis minima expedita illum autem ea facilis quibusdam nesciunt, nisi distinctio odio nostrum!</p>
-    </div>
+    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; margin-top: 40px; box-sizing: content-box;"
+        class="container text-center">
 
-    <div style="margin: 10px; text-align: justify;">
-        <img src="IMG/Servicios/asesoria.png" alt="asesoria reproductiva">
-        <h3 style="text-align: center;">asesoría reproductiva</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias iste illo in sit incidunt sequi minus officiis minima expedita illum autem ea facilis quibusdam nesciunt, nisi distinctio odio nostrum!</p>
-    </div>
+        <div style="margin: 10px; text-align: justify;" class="row">
+            <div class="col-md-3">
+                <img src="IMG/Servicios/consulta.png" alt="Consulta general">
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h3 style="text-align: center;">Consulta general</h3>
+                    </div>
+                    <div class="col-md-9">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias iste illo in sit
+                            incidunt sequi minus officiis minima expedita illum autem ea facilis quibusdam nesciunt,
+                            nisi distinctio odio nostrum!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <div style="margin: 10px; text-align: justify;">
-        <img src="IMG/Servicios/laboratorio.png" alt="Laboratorio">
-        <h3 style="text-align: center;">Laboratorio</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias iste illo in sit incidunt sequi minus officiis minima expedita illum autem ea facilis quibusdam nesciunt, nisi distinctio odio nostrum!</p>
-    </div>
-</div>
+        <div style="margin: 10px; text-align: justify;" class="row">
+            <div class="col-md-3">
+                <img src="IMG/Servicios/asesoria.png" alt="asesoría reproductiva">
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h3 style="text-align: center;">Asesoría reproductiva</h3>
+                    </div>
+                    <div class="col-md-9">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur perferendis dignissimos
+                            nulla odio consectetur pariatur tenetur unde numquam aperiam modi?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<div style="display: flex;justify-content: center;">
-    <div style="margin: 10px; text-align: justify;">
-        <img src="IMG/Servicios/cesareas.png" alt="Cesareas">
-        <h3 style="text-align: center;">Cesareas</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias iste illo in sit incidunt sequi minus officiis minima expedita illum autem ea facilis quibusdam nesciunt, nisi distinctio odio nostrum!</p>
-    </div>
 
-    <div style="margin: 10px; text-align: justify;">
-        <img src="IMG/Servicios/esterilizacion.png" alt="Esterilización">
-        <h3 style="text-align: center;">Esterilización</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias iste illo in sit incidunt sequi minus officiis minima expedita illum autem ea facilis quibusdam nesciunt, nisi distinctio odio nostrum!</p>
-    </div>
 
-    <div style="margin: 10px; text-align: justify;">
-        <img src="IMG/Servicios/hospitalizacion.png" alt="Hospitalización">
-        <h3 style="text-align: center;">Hospitalización</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias iste illo in sit incidunt sequi minus officiis minima expedita illum autem ea facilis quibusdam nesciunt, nisi distinctio odio nostrum!</p>
-    </div>
+        <div style="margin: 10px; text-align: justify;">
+            <img src="IMG/Servicios/asesoria.png" alt="asesoría reproductiva">
+            <h3 style="text-align: center;">asesoría reproductiva</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias iste illo in sit incidunt sequi
+                minus officiis minima expedita illum autem ea facilis quibusdam nesciunt, nisi distinctio odio nostrum!
+            </p>
+        </div>
 
-</div>
+        <div style="margin: 10px; text-align: justify;">
+            <img src="IMG/Servicios/laboratorio.png" alt="Laboratorio">
+            <h3 style="text-align: center;">Laboratorio</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias iste illo in sit incidunt sequi
+                minus officiis minima expedita illum autem ea facilis quibusdam nesciunt, nisi distinctio odio nostrum!
+            </p>
+        </div>
+
+        <div style="margin: 10px; text-align: justify;">
+            <img src="IMG/Servicios/cesareas.png" alt="Cesareas">
+            <h3 style="text-align: center;">Cesareas</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias iste illo in sit incidunt sequi
+                minus officiis minima expedita illum autem ea facilis quibusdam nesciunt, nisi distinctio odio nostrum!
+            </p>
+        </div>
+
+        <div style="margin: 10px; text-align: justify;">
+            <img src="IMG/Servicios/esterilizacion.png" alt="Esterilización">
+            <h3 style="text-align: center;">Esterilización</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias iste illo in sit incidunt sequi
+                minus officiis minima expedita illum autem ea facilis quibusdam nesciunt, nisi distinctio odio nostrum!
+            </p>
+        </div>
+
+        <div style="margin: 10px; text-align: justify;">
+            <img src="IMG/Servicios/hospitalizacion.png" alt="Hospitalización">
+            <h3 style="text-align: center;">Hospitalización</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias iste illo in sit incidunt sequi
+                minus officiis minima expedita illum autem ea facilis quibusdam nesciunt, nisi distinctio odio nostrum!
+            </p>
+        </div>
+
+    </div>
 
 </body>
+
 </html>
