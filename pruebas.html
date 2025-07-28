@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="hvs.css">
+
+</head>
+
+<body>
+    <IMG src="IMG/portada1.jpg" alt="imagen de fondo"></IMG>
+
+<!-- nuevo menu -->
+
+<header>
+    <h5>Hospital Veterinario del Sur</h5>
+    <nav class="dropdownmenu"> 
+        <!-- el "dropdownmenu" es el nombre de la clase para el menú desplegable y asi poder modificarlo en el CSS -->
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <!-- la clase "a" es para los enlaces dentro del menú -->
+             <!-- la subclase "href="$" es para los enlaces dentro del menú -->
+            <li><a href="servicios.html">Servicios</a></li>
+            <!-- la clase "li" es para los elementos de la lista dentro del menú -->
+            <li><a href="productos.html">Nuestros Productos</a>
+            <ul id="submenu">
+                <!-- el "submenu" es el nombre de la clase para el submenú y asi poder modificarlo en el CSS
+                 se utiliza "id" para identificarlo de manera única y que se modifique de forma independiente -->
+                <li><a href="#">Alimentos</a></li>
+                <li><a href="#">Medicamentos</a></li>
+                <li><a href="#">Accesorios</a></li>
+                <li><a href="#">Laboratorio</a></li>
+            </ul>
+            </li>
+            <li><a href="contactanos.html">contactanos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, voluptas autem explicabo culpa iusto, cumque vitae vel cum pariatur quos sapiente mollitia praesentium atque maxime consequatur odio quod eum architecto ipsa sint ex. Doloribus sunt repudiandae eaque in delectus magni temporibus corrupti magnam ratione pariatur modi esse ut, maiores voluptate.</p>
+<!-- fin del nuevo menu -->
+
+    <footer class="text-center mt-8">
+        <p>&copy; 2023 Hospital Veterinario del Sur. Todos los derechos reservados.</p>
+    </footer>
+      
+</body>
+
+</html>

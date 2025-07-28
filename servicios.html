@@ -11,99 +11,170 @@
 </head>
 
 <body>
-    <IMG src="IMG/portada1.jpg" alt="imagen de fondo"></IMG>
-    <h1>HOSPITAL VETERINARIO DEL SUR</h1>
+    <IMG src="IMG/portadalogo.jpg" alt="imagen de fondo"></IMG>
+
+
 
     <!-- inicio del menu principal -->
-    <a class="btn btn-primary" onclick="location.href='index.html'" role="button">inicio</a>
-    <button class="btn btn-primary" onclick="location.href='servicios.html'" type="submit">servicios</button>
-    <input class="btn btn-primary" type="button" onclick="location.href='productos.html'" value="productos">
-    <input class="btn btn-primary" onclick="location.href='contactanos.html'" type="submit" value="contactanos">
+    <!-- inicio del menu principal -->
+    <header>
+        <h3>Hospital Veterinario del Sur</h3>
+        <nav class="dropdownmenu">
 
+            <ul>
+                <li ><a href="index.html">Inicio</a></li>
+
+                <li><a href="servicios.html">Servicios</a></li>
+
+                <li><a href="productos.html">Nuestros Productos</a>
+                    <ul id="submenu">
+
+                        <li><a href="#">Alimentos</a></li>
+                        <li><a href="#">Medicamentos</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Laboratorio</a></li>
+                    </ul>
+                </li>
+                <li><a href="contactanos.html">contactanos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
     <!-- fin del menu principal -->
 
-    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; margin-top: 40px; box-sizing: content-box;"
-        class="container text-center">
-
-        <div style="margin: 10px; text-align: justify;" class="row">
-            <div class="col-md-3">
-                <img src="IMG/Servicios/consulta.png" alt="Consulta general">
-            </div>
-            <div class="col-md-9">
-                <div class="row">
-                    <div class="col-md-9">
-                        <h3 style="text-align: center;">Consulta general</h3>
+    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; margin-top: 20px; box-sizing: content-box;"
+        class="row">
+                   <!-- consulta general -->
+            <div style="margin: 10px; text-align: justify;" class="row">
+                <div class="col-md-3" style="display: flex; justify-content: center; align-items: center;">
+                    <img src="IMG/Servicios/Consulta_general.png" alt="Consulta general">
+                </div>
+                <div class="col-md-9">
+                    <div class="row" style="width: 100%;">
+                        <div class="col-md-9" style="width: 100%;">
+                            <h3 style="text-align: center; justify-content: center;">Consulta general</h3>
+                        </div>
+                        <div class="col-md-9"
+                            style=" width: 100%; margin: 5px; display: flex; justify-content: center;">
+                            <p style="margin: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                                alias
+                                iste illo in sit
+                                incidunt sequi minus officiis minima expedita illum autem ea facilis quibusdam nesciunt,
+                                nisi distinctio odio nostrum!</p>
+                        </div>
                     </div>
-                    <div class="col-md-9">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias iste illo in sit
-                            incidunt sequi minus officiis minima expedita illum autem ea facilis quibusdam nesciunt,
-                            nisi distinctio odio nostrum!</p>
+                </div>
+            </div>
+            <!-- Laboratorio -->
+            <div style="margin: 10px; text-align: justify;" class="row">
+                <div class="col-md-3" style="display: flex; justify-content: center; align-items: center;">
+                    <img src="IMG/Servicios/laboratorio.png" alt="Laboratorio">
+                </div>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-9" style="width: 100%;">
+                            <h3 style="text-align: center; justify-content: center;">Laboratorio</h3>
+                        </div>
+                        <div class="col-md-9"
+                            style=" width: 100%; margin: 5px; display: flex; justify-content: center;">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, deleniti, vero
+                                quisquam
+                                quis officia veniam totam adipisci dolor alias placeat maxime rerum nostrum quae dicta!
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- Vacunacion -->
         <div style="margin: 10px; text-align: justify;" class="row">
-            <div class="col-md-3">
-                <img src="IMG/Servicios/asesoria.png" alt="asesoría reproductiva">
+            <div class="col-md-3" style="display: flex; justify-content: center; align-items: center;">
+                <img src="IMG/Servicios/vacunacion.png" alt="Vacunación">
             </div>
             <div class="col-md-9">
                 <div class="row">
-                    <div class="col-md-9">
-                        <h3 style="text-align: center;">Asesoría reproductiva</h3>
+                    <div class="col-md-9" style="width: 100%;">
+                        <h3 style="text-align: center; justify-content: center;">Vacunación</h3>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-9" style=" width: 100%; margin: 5px; display: flex; justify-content: center;">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas itaque id pariatur dolor
+                            doloribus accusantium voluptate, deleniti, soluta error, debitis obcaecati animi dolores
+                            adipisci? Quo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Rayos x -->
+        <div style="margin: 10px; text-align: justify;" class="row">
+            <div class="col-md-3" style="display: flex; justify-content: center; align-items: center;">
+                <img src="IMG/Servicios/rayos_x.png" alt="Rayos X">
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-9" style="width: 100%;">
+                        <h3 style="text-align: center; justify-content: center;">Rayos X</h3>
+                    </div>
+                    <div class="col-md-9" style=" width: 100%; margin: 5px; display: flex; justify-content: center;">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ea iure deleniti minus saepe
+                            magnam, ab quis corrupti neque culpa inventore numquam cupiditate maxime nemo!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Emergencias -->
+        <div style="margin: 10px; text-align: justify;" class="row">
+            <div class="col-md-3" style="display: flex; justify-content: center; align-items: center;">
+                <img src="IMG/Servicios/emergencias.png" alt="Emergencias">
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-9" style="width: 100%;">
+                        <h3 style="text-align: center; justify-content: center;">Emergencias</h3>
+                    </div>
+                    <div class="col-md-9" style=" width: 100%; margin: 5px; display: flex; justify-content: center;">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur perferendis dignissimos
                             nulla odio consectetur pariatur tenetur unde numquam aperiam modi?</p>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-        <div style="margin: 10px; text-align: justify;">
-            <img src="IMG/Servicios/asesoria.png" alt="asesoría reproductiva">
-            <h3 style="text-align: center;">asesoría reproductiva</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias iste illo in sit incidunt sequi
-                minus officiis minima expedita illum autem ea facilis quibusdam nesciunt, nisi distinctio odio nostrum!
-            </p>
+        <!-- Asesoría reproductiva -->
+        <div style="margin: 10px; text-align: justify;" class="row">
+            <div class="col-md-3" style="display: flex; justify-content: center; align-items: center;">
+                <img src="IMG/Servicios/asesoria_nutricional.png" alt="asesoría Nutricional">
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-9" style="width: 100%;">
+                        <h3 style="text-align: center; justify-content: center;">Asesoría Nutricional</h3>
+                    </div>
+                    <div class="col-md-9" style=" width: 100%; margin: 5px; display: flex; justify-content: center;">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur perferendis dignissimos
+                            nulla odio consectetur pariatur tenetur unde numquam aperiam modi?</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div style="margin: 10px; text-align: justify;">
-            <img src="IMG/Servicios/laboratorio.png" alt="Laboratorio">
-            <h3 style="text-align: center;">Laboratorio</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias iste illo in sit incidunt sequi
-                minus officiis minima expedita illum autem ea facilis quibusdam nesciunt, nisi distinctio odio nostrum!
-            </p>
+        <!-- Medicamentos -->
+        <div style="margin: 10px; text-align: justify;" class="row">
+            <div class="col-md-3" style="display: flex; justify-content: center; align-items: center;">
+                <img src="IMG/Servicios/medicamentos.png" alt="Medicamentos">
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-9" style="width: 100%;">
+                        <h3 style="text-align: center; justify-content: center;">Medicamentos</h3>
+                    </div>
+                    <div class="col-md-9" style=" width: 100%; margin: 5px; display: flex; justify-content: center;">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur perferendis dignissimos
+                            nulla odio consectetur pariatur tenetur unde numquam aperiam modi?</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div style="margin: 10px; text-align: justify;">
-            <img src="IMG/Servicios/cesareas.png" alt="Cesareas">
-            <h3 style="text-align: center;">Cesareas</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias iste illo in sit incidunt sequi
-                minus officiis minima expedita illum autem ea facilis quibusdam nesciunt, nisi distinctio odio nostrum!
-            </p>
-        </div>
-
-        <div style="margin: 10px; text-align: justify;">
-            <img src="IMG/Servicios/esterilizacion.png" alt="Esterilización">
-            <h3 style="text-align: center;">Esterilización</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias iste illo in sit incidunt sequi
-                minus officiis minima expedita illum autem ea facilis quibusdam nesciunt, nisi distinctio odio nostrum!
-            </p>
-        </div>
-
-        <div style="margin: 10px; text-align: justify;">
-            <img src="IMG/Servicios/hospitalizacion.png" alt="Hospitalización">
-            <h3 style="text-align: center;">Hospitalización</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias iste illo in sit incidunt sequi
-                minus officiis minima expedita illum autem ea facilis quibusdam nesciunt, nisi distinctio odio nostrum!
-            </p>
-        </div>
-
     </div>
-
+    </div>
 </body>
 
 </html>

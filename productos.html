@@ -12,15 +12,30 @@
 <body>
     <IMG src="IMG/portada1.jpg" alt="imagen de fondo"></IMG>
    
-  
-    <h1>HOSPITAL VETERINARIO DEL SUR</h1>
-
-      <!-- inicio del menu principal -->
-    <a class="btn btn-primary" href="#" role="button">inicio</a>
-    <button class="btn btn-primary" onclick="location.href='servicios.html'" type="submit">servicios</button>
-    <input class="btn btn-primary" type="button" onclick="location.href='productos.html'" value="productos">
-    <input class="btn btn-primary" onclick="location.href='contactanos.html'" type="submit" value="contactanos">
-
+     <!-- inicio del menu principal -->
+<header>
+    <h5>Hospital Veterinario del Sur</h5>
+    <nav class="dropdownmenu"> 
+       
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            
+            <li><a href="servicios.html">Servicios</a></li>
+            
+            <li><a href="productos.html">Nuestros Productos</a>
+            <ul id="submenu">
+                
+                <li><a href="#">Alimentos</a></li>
+                <li><a href="#">Medicamentos</a></li>
+                <li><a href="#">Accesorios</a></li>
+                <li><a href="#">Laboratorio</a></li>
+            </ul>
+            </li>
+            <li><a href="contactanos.html">contactanos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
     <!-- fin del menu principal -->
 
     <p style="margin-top: 30px;">En nuestra clinica ofrecemos una amplia gama de productos para el cuidado de tus mascotas asi como medicamentos y concentrados de la mas alta calidad.</p>
