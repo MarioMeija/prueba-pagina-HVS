@@ -2,52 +2,203 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="hvs.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="hvs.css">
 </head>
 
 <body>
-    <IMG src="IMG/portada1.jpg" alt="imagen de fondo"></IMG>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</body>
+
+<IMG src="IMG/nueva portada de la cv.jpg" alt="imagen de fondo"></IMG>
 
 <!-- nuevo menu -->
 
 <header>
-    <h5>Hospital Veterinario del Sur</h5>
-    <nav class="dropdownmenu"> 
-        <!-- el "dropdownmenu" es el nombre de la clase para el menú desplegable y asi poder modificarlo en el CSS -->
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <!-- la clase "a" es para los enlaces dentro del menú -->
-             <!-- la subclase "href="$" es para los enlaces dentro del menú -->
-            <li><a href="servicios.html">Servicios</a></li>
-            <!-- la clase "li" es para los elementos de la lista dentro del menú -->
-            <li><a href="productos.html">Nuestros Productos</a>
-            <ul id="submenu">
-                <!-- el "submenu" es el nombre de la clase para el submenú y asi poder modificarlo en el CSS
+  <h5>Hospital Veterinario del Sur</h5>
+  <nav class="dropdownmenu">
+    <!-- el "dropdownmenu" es el nombre de la clase para el menú desplegable y asi poder modificarlo en el CSS -->
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <!-- la clase "a" es para los enlaces dentro del menú -->
+      <!-- la subclase "href="$" es para los enlaces dentro del menú -->
+      <li><a href="servicios.html">Servicios</a></li>
+      <!-- la clase "li" es para los elementos de la lista dentro del menú -->
+      <li><a href="productos.html">Nuestros Productos</a>
+        <ul id="submenu">
+          <!-- el "submenu" es el nombre de la clase para el submenú y asi poder modificarlo en el CSS
                  se utiliza "id" para identificarlo de manera única y que se modifique de forma independiente -->
-                <li><a href="#">Alimentos</a></li>
-                <li><a href="#">Medicamentos</a></li>
-                <li><a href="#">Accesorios</a></li>
-                <li><a href="#">Laboratorio</a></li>
-            </ul>
-            </li>
-            <li><a href="contactanos.html">contactanos</a></li>
-            <li><a href="#">Contacto</a></li>
+          <li><a href="#">Alimentos</a></li>
+          <li><a href="#">Medicamentos</a></li>
+          <li><a href="#">Accesorios</a></li>
+          <li><a href="#">Laboratorio</a></li>
         </ul>
-    </nav>
+      </li>
+      <li><a href="contactanos.html">contactanos</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
 </header>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, voluptas autem explicabo culpa iusto, cumque vitae vel cum pariatur quos sapiente mollitia praesentium atque maxime consequatur odio quod eum architecto ipsa sint ex. Doloribus sunt repudiandae eaque in delectus magni temporibus corrupti magnam ratione pariatur modi esse ut, maiores voluptate.</p>
 <!-- fin del nuevo menu -->
 
-    <footer class="text-center mt-8">
-        <p>&copy; 2023 Hospital Veterinario del Sur. Todos los derechos reservados.</p>
-    </footer>
-      
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, voluptas autem explicabo culpa iusto, cumque vitae
+  vel cum pariatur quos sapiente mollitia praesentium atque maxime consequatur odio quod eum architecto ipsa sint ex.
+  Doloribus sunt repudiandae eaque in delectus magni temporibus corrupti magnam ratione pariatur modi esse ut, maiores
+  voluptate.</p>
+
+  <p>contactanos</p>
+
+  <a href="https://wa.me/50496791480" class="whatsapp-btn" target="_blank">
+  <i class="fab fa-whatsapp"></i> Contáctanos por WhatsApp
+</a>
+
+<a href="https://wa.me/50496791480?text=Hola,%20me%20interesa%20obtener%20más%20información" 
+   class="btn btn-whatsapp"
+   target="_blank">
+  <i class="fab fa-whatsapp"></i> Contáctanos
+</a>
+
+<!-- menu de imagenes en movimiento -->
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="IMG/pruebas/dg1.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="IMG/pruebas/dg2.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="IMG/pruebas/dg3.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- fin de imagenes en movimiento -->
+
+<!-- inicio de servicios -->
+<div class="container; transform" style="margin-top: 30px;">
+  <div class="row">
+    <!-- consulta general -->
+    <div class="item features-image col-12 col-md-6 col-lg-3 active">
+      <div class="item-wrapper">
+        <div class="item-img mb-3">
+          <IMG src="IMG/Servicios/Consulta_general.png" alt="imagen de fondo"></IMG>
+        </div>
+        <div class="item-content">
+          <h3>Consulta general</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sint repellat id reiciendis error
+            praesentium, distinctio accusantium ipsum. Nemo reprehenderit placeat amet sunt necessitatibus neque
+            deserunt soluta ullam expedita repellendus.</p>
+        </div>
+      </div>
+    </div>
+    <!-- laboratorio -->
+    <div class="item features-image col-12 col-md-6 col-lg-3 active">
+      <div class="item-wrapper">
+        <div class="item-img mb-3">
+          <img src="IMG/Servicios/laboratorio.png" alt="Laboratorio"></img>
+        </div>
+        <div class="item-content">
+          <h3>Laboratorio</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae iure exercitationem, necessitatibus
+            veniam sunt commodi natus? Qui placeat, incidunt, ipsam, ad error totam et sunt delectus ex cupiditate
+            tempora ut.</p>
+        </div>
+      </div>
+    </div>
+    <!-- vacunacion -->
+    <div class="item features-image col-12 col-md-6 col-lg-3 active">
+      <div class="item-wrapper">
+        <div class="item-img mb-3">
+          <img src="IMG/Servicios/vacunacion.png" alt="Vacunación"></img>
+        </div>
+        <div class="item-content">
+          <h3>Vacunación</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus quisquam qui quasi similique animi, earum
+            aliquid odio, sit distinctio cum officia veniam praesentium asperiores fugit maxime laboriosam est, ut
+            mollitia.</p>
+        </div>
+      </div>
+    </div>
+    <!-- rayos x -->
+    <div class="item features-image col-12 col-md-6 col-lg-3 active">
+      <div class="item-wrapper">
+        <div class="item-img mb-3">
+          <img src="IMG/Servicios/rayos_x.png" alt="Rayos X">
+        </div>
+        <div class="item-content">
+          <h3>Rayos X</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo odio vel incidunt esse numquam cum
+            asperiores, adipisci necessitatibus obcaecati a ex veniam cupiditate? Laudantium, a qui. Culpa, fuga quis.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- emergencias -->
+    <div class="item features-image col-12 col-md-6 col-lg-3 active">
+      <div class="item-wrapper">
+        <div class="item-img mb-3">
+          <img src="IMG/Servicios/emergencias.png" alt="Emergencias"></img>
+        </div>
+        <div class="item-content">
+          <h3>Emergencias</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut nesciunt iste facere animi, ex, porro itaque
+            perferendis omnis reiciendis, excepturi earum qui illum voluptas numquam quidem iusto eveniet totam eaque.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- asesoría reproductiva -->
+    <div class="item features-image col-12 col-md-6 col-lg-3 active">
+      <div class="item-wrapper">
+        <div class="item-img mb-3">
+          <img src="IMG/Servicios/asesoria_nutricional.png" alt="asesoría Nutricional"></img>
+        </div>
+        <div class="item-content">
+          <h3>Asesoría Nutricional</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, maxime in maiores voluptatum ab similique
+            ipsa.
+            Esse illo sunt nam iure aut harum perspiciatis excepturi deserunt, dicta nulla aperiam non.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Farmacia -->
+    <div class="item features-image col-12 col-md-6 col-lg-3 active">
+      <div class="item-wrapper">
+        <div class="item-img mb-3">
+          <img src="IMG/Servicios/medicamentos.png" alt="Farmacia"></img>
+        </div>
+            <div class="item-content">
+        <h3>Farmacia</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi est, odio ad assumenda, amet dicta esse
+          alias,
+          deserunt architecto quaerat impedit similique quasi eveniet maiores atque! Ullam, nihil eveniet. Reiciendis?
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="text-center mt-8">
+  <p>&copy; 2023 Hospital Veterinario del Sur. Todos los derechos reservados.</p>
+</footer>
+
+
 </body>
 
 </html>

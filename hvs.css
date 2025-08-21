@@ -1,120 +1,361 @@
 Body {
-    background-image: url('IMG/fondo pag cli.png');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    align-items: center;
-}
-
-button,
-input[type="button"] {
-    background-color: rgb(79, 127, 212);
-    color: white;
-    border-radius: 50px;
-    border: black solid 3px;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    margin: 5px;
+  background-image: url('IMG/fondo pag cli.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
 }
 
 /* nuevo menu */
 header {
-    padding: 15px;
-    background-color: rgb(79, 127, 212);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 15px;
+  background-color: rgb(79, 127, 212);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+
 }
-.dropdownmenu ul, .dropdownmenu li {
-    margin: 0%;
-    padding: 0%;
-}
-.dropdownmenu ul {
-	background: rgb(121, 190, 109);
-	list-style: none;
-	width: 100%;
-}
+
+.dropdownmenu ul,
 .dropdownmenu li {
-	float: left;
-	position: relative;
-	width:auto;
+  margin: 0%;
+  padding: 0%;
 }
+
+.dropdownmenu ul {
+  background: rgb(121, 190, 109);
+  list-style: none;
+  width: 100%;
+}
+
+.dropdownmenu li {
+  float: left;
+  position: relative;
+  width: auto;
+}
+
 .dropdownmenu a {
-	background: rgb(79, 127, 212);
-	color: #FFFFFF;
-	display: block;
-	font: bold 12px/20px sans-serif;
-	padding: 10px 25px;
-	text-align: center;
-	text-decoration: none;
-	-webkit-transition: all .25s ease;
-	-moz-transition: all .25s ease;
-	-ms-transition: all .25s ease;
-	-o-transition: all .25s ease;
-	transition: all .25s ease; 
-    font-size: 1.0em;
+  background: rgb(79, 127, 212);
+  color: #FFFFFF;
+  display: block;
+  font: bold 12px/20px sans-serif;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+  font-size: 1.0em;
 }
+
 .dropdownmenu ul li a {
- transform: 0.3s, background-color 0.3s ease;
+  transform: 0.3s, background-color 0.3s ease;
 }
+
 .dropdownmenu ul li a:hover {
-  transform: translateY(6px); 
-  /* la funcion: "transform: scale" aumenta el tamaño del elemento */
-  background-color: rgb(121, 190, 109); 
+  transform: translateY(6px);
+  /* la funcion:   "transform: scale" aumenta el tamaño del elemento */
+  background-color: rgb(121, 190, 109);
 }
 
 .dropdownmenu li:hover a {
-	background: rgb(121, 190, 109);
+  background: rgb(121, 190, 109);
 }
+
 #submenu {
-	left: 0;
-	opacity: 0;
-	position: absolute;
-	top: 35px;
-	visibility: hidden;
-	z-index: 1;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 35px;
+  visibility: hidden;
+  z-index: 1;
 }
+
 li:hover ul#submenu {
-	opacity: 1;
-	top: 40px;	/* adjust this as per top nav padding top & bottom comes */
-	visibility: visible;
+  opacity: 1;
+  top: 40px;
+  /* adjust this as per top nav padding top & bottom comes */
+  visibility: visible;
 }
+
 #submenu li {
-	float: none;
-	width: 100%;
+  float: none;
+  width: 100%;
 }
+
 #submenu a:hover {
-	background: rgb(79, 127, 212);
+  background: rgb(79, 127, 212);
 }
+
 #submenu a {
-	background-color: rgb(121, 190, 109);
+  background-color: rgb(121, 190, 109);
 }
+
 /* fin del nuevo menu */
 
 /* Estilos para los párrafos */
 p {
-    color: rgb(255, 255, 255);
-    font-size: 1.2em;
-    margin-top: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+  margin-top: 10px;
+  text-align: justify;
 }
-h3 {
-    color: rgb(255, 255, 255);
-    font-size: 2em;
-    text-align: center;
-}   
 
+h3 {
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+  text-align: center;
+  margin-top: 20px;
+}
 
 /* FIN Estilos para las imágenes */
 
 img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
+/* fin de estilos para las imágenes */
+
+/* Efecto opcional para todo el card de los servicios que se ofrecen*/
+.item-wrapper {
+  transition: all 0.3s ease;
+}
+
+.item-wrapper:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* estilos para el cuerpo de "servicio" */
+
+.whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.whatsapp-btn:hover {
+  background-color: #128C7E;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.whatsapp-btn i {
+  margin-right: 8px;
+  font-size: 1.2em;
+}
+
+/* Sección de Visión con fondo especial */
+.vision-empresa {
+  background: linear-gradient(135deg, rgb(79, 127, 212) 0%, rgb(121, 190, 109) 100%);
+  color: white;
+  padding: 4rem 2rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.contenedor-vision {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.vision-empresa h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.vision-empresa p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* fin de Sección de Visión con fondo especial */
 
 
+/* ---------------------------------------------------------------------------------------------------- */
+/* ----------------------inicio de CSS para el apartado: Contacto-------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* Sección de Contacto */
+.vision-contacto {
+  background: linear-gradient(135deg, rgb(79, 127, 212) 0%, rgb(79, 127, 212) 100%);
+  color: white;
+  padding: 1rem 1rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.contenedor-vision-contacto {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.vision-contacto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.vision-contacto p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* fin seccion de "contactanos */
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 10px;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.contact-info h2 {
+  color: rgb(79, 127, 212);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  padding-bottom: 25px;
+  border-bottom: 3px solid rgb(121, 190, 109);
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.icon {
+  min-width: 40px;
+  height: 40px;
+  background-color: #e6f2ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  margin-top: 40px;
+  color: #1a75bc;
+  font-size: 25px;
+}
+
+.info-text h3 {
+  margin-bottom: 5px;
+  color: rgb(51, 51, 51);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.info-text p {
+  color: #666;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.map-container {
+  flex: 2;
+  min-width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-top: 50px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 550px;
+  border: none;
+  display: block;
+}
+
+.business-hours {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-top: 20px;
+}
+
+.business-hours h2 {
+  color: #1a75bc;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.hours-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.hours-table tr {
+  border-bottom: 1px solid #eee;
+}
+
+.hours-table tr:last-child {
+  border-bottom: none;
+}
+
+.hours-table td {
+  padding: 12px 0;
+}
+
+.hours-table td:first-child {
+  font-weight: 600;
+  color: #333;
+}
+
+.hours-table td:last-child {
+  text-align: right;
+  color: #666;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: #666;
+  border-top: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .map-container iframe {
+    height: 350px;
+  }
+}

@@ -11,170 +11,145 @@
 </head>
 
 <body>
-    <IMG src="IMG/portadalogo.jpg" alt="imagen de fondo"></IMG>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
 
+<IMG src="IMG/nueva portada de la cv.jpg" alt="imagen de fondo"></IMG>
 
+<!-- inicio del menu principal -->
+<header>
+    <h3>Hospital Veterinario del Sur</h3>
+    <nav class="dropdownmenu">
 
-    <!-- inicio del menu principal -->
-    <!-- inicio del menu principal -->
-    <header>
-        <h3>Hospital Veterinario del Sur</h3>
-        <nav class="dropdownmenu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
 
-            <ul>
-                <li ><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
 
-                <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="productos.html">Nuestros Productos</a>
+                <ul id="submenu">
 
-                <li><a href="productos.html">Nuestros Productos</a>
-                    <ul id="submenu">
+                    <li><a href="#">Alimentos</a></li>
+                    <li><a href="#">Medicamentos</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                    <li><a href="#">Laboratorio</a></li>
+                </ul>
+            </li>
+            <li><a href="contactanos.html">contactanos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- fin del menu principal -->
 
-                        <li><a href="#">Alimentos</a></li>
-                        <li><a href="#">Medicamentos</a></li>
-                        <li><a href="#">Accesorios</a></li>
-                        <li><a href="#">Laboratorio</a></li>
-                    </ul>
-                </li>
-                <li><a href="contactanos.html">contactanos</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- fin del menu principal -->
-
-    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; margin-top: 20px; box-sizing: content-box;"
-        class="row">
-                   <!-- consulta general -->
-            <div style="margin: 10px; text-align: justify;" class="row">
-                <div class="col-md-3" style="display: flex; justify-content: center; align-items: center;">
-                    <img src="IMG/Servicios/Consulta_general.png" alt="Consulta general">
-                </div>
-                <div class="col-md-9">
-                    <div class="row" style="width: 100%;">
-                        <div class="col-md-9" style="width: 100%;">
-                            <h3 style="text-align: center; justify-content: center;">Consulta general</h3>
-                        </div>
-                        <div class="col-md-9"
-                            style=" width: 100%; margin: 5px; display: flex; justify-content: center;">
-                            <p style="margin: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-                                alias
-                                iste illo in sit
-                                incidunt sequi minus officiis minima expedita illum autem ea facilis quibusdam nesciunt,
-                                nisi distinctio odio nostrum!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Laboratorio -->
-            <div style="margin: 10px; text-align: justify;" class="row">
-                <div class="col-md-3" style="display: flex; justify-content: center; align-items: center;">
-                    <img src="IMG/Servicios/laboratorio.png" alt="Laboratorio">
-                </div>
-                <div class="col-md-9">
-                    <div class="row">
-                        <div class="col-md-9" style="width: 100%;">
-                            <h3 style="text-align: center; justify-content: center;">Laboratorio</h3>
-                        </div>
-                        <div class="col-md-9"
-                            style=" width: 100%; margin: 5px; display: flex; justify-content: center;">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, deleniti, vero
-                                quisquam
-                                quis officia veniam totam adipisci dolor alias placeat maxime rerum nostrum quae dicta!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- inicio de servicios -->
+<div class="container; transform" style="margin-top: 30px;">
+  <div class="row">
+    <!-- consulta general -->
+    <div class="item features-image col-12 col-md-6 col-lg-3 active">
+      <div class="item-wrapper">
+        <div class="item-img mb-3">
+          <IMG src="IMG/Servicios/Consulta_general.png" alt="imagen de fondo"></IMG>
         </div>
-
-        <!-- Vacunacion -->
-        <div style="margin: 10px; text-align: justify;" class="row">
-            <div class="col-md-3" style="display: flex; justify-content: center; align-items: center;">
-                <img src="IMG/Servicios/vacunacion.png" alt="Vacunación">
-            </div>
-            <div class="col-md-9">
-                <div class="row">
-                    <div class="col-md-9" style="width: 100%;">
-                        <h3 style="text-align: center; justify-content: center;">Vacunación</h3>
-                    </div>
-                    <div class="col-md-9" style=" width: 100%; margin: 5px; display: flex; justify-content: center;">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas itaque id pariatur dolor
-                            doloribus accusantium voluptate, deleniti, soluta error, debitis obcaecati animi dolores
-                            adipisci? Quo.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="item-content">
+          <h3>Consulta general</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sint repellat id reiciendis error
+            praesentium, distinctio accusantium ipsum. Nemo reprehenderit placeat amet sunt necessitatibus neque
+            deserunt soluta ullam expedita repellendus.</p>
         </div>
-        <!-- Rayos x -->
-        <div style="margin: 10px; text-align: justify;" class="row">
-            <div class="col-md-3" style="display: flex; justify-content: center; align-items: center;">
-                <img src="IMG/Servicios/rayos_x.png" alt="Rayos X">
-            </div>
-            <div class="col-md-9">
-                <div class="row">
-                    <div class="col-md-9" style="width: 100%;">
-                        <h3 style="text-align: center; justify-content: center;">Rayos X</h3>
-                    </div>
-                    <div class="col-md-9" style=" width: 100%; margin: 5px; display: flex; justify-content: center;">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ea iure deleniti minus saepe
-                            magnam, ab quis corrupti neque culpa inventore numquam cupiditate maxime nemo!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Emergencias -->
-        <div style="margin: 10px; text-align: justify;" class="row">
-            <div class="col-md-3" style="display: flex; justify-content: center; align-items: center;">
-                <img src="IMG/Servicios/emergencias.png" alt="Emergencias">
-            </div>
-            <div class="col-md-9">
-                <div class="row">
-                    <div class="col-md-9" style="width: 100%;">
-                        <h3 style="text-align: center; justify-content: center;">Emergencias</h3>
-                    </div>
-                    <div class="col-md-9" style=" width: 100%; margin: 5px; display: flex; justify-content: center;">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur perferendis dignissimos
-                            nulla odio consectetur pariatur tenetur unde numquam aperiam modi?</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Asesoría reproductiva -->
-        <div style="margin: 10px; text-align: justify;" class="row">
-            <div class="col-md-3" style="display: flex; justify-content: center; align-items: center;">
-                <img src="IMG/Servicios/asesoria_nutricional.png" alt="asesoría Nutricional">
-            </div>
-            <div class="col-md-9">
-                <div class="row">
-                    <div class="col-md-9" style="width: 100%;">
-                        <h3 style="text-align: center; justify-content: center;">Asesoría Nutricional</h3>
-                    </div>
-                    <div class="col-md-9" style=" width: 100%; margin: 5px; display: flex; justify-content: center;">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur perferendis dignissimos
-                            nulla odio consectetur pariatur tenetur unde numquam aperiam modi?</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Medicamentos -->
-        <div style="margin: 10px; text-align: justify;" class="row">
-            <div class="col-md-3" style="display: flex; justify-content: center; align-items: center;">
-                <img src="IMG/Servicios/medicamentos.png" alt="Medicamentos">
-            </div>
-            <div class="col-md-9">
-                <div class="row">
-                    <div class="col-md-9" style="width: 100%;">
-                        <h3 style="text-align: center; justify-content: center;">Medicamentos</h3>
-                    </div>
-                    <div class="col-md-9" style=" width: 100%; margin: 5px; display: flex; justify-content: center;">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur perferendis dignissimos
-                            nulla odio consectetur pariatur tenetur unde numquam aperiam modi?</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+    <!-- laboratorio -->
+    <div class="item features-image col-12 col-md-6 col-lg-3 active">
+      <div class="item-wrapper">
+        <div class="item-img mb-3">
+          <img src="IMG/Servicios/laboratorio.png" alt="Laboratorio"></img>
+        </div>
+        <div class="item-content">
+          <h3>Laboratorio</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae iure exercitationem, necessitatibus
+            veniam sunt commodi natus? Qui placeat, incidunt, ipsam, ad error totam et sunt delectus ex cupiditate
+            tempora ut.</p>
+        </div>
+      </div>
     </div>
+    <!-- vacunacion -->
+    <div class="item features-image col-12 col-md-6 col-lg-3 active">
+      <div class="item-wrapper">
+        <div class="item-img mb-3">
+          <img src="IMG/Servicios/vacunacion.png" alt="Vacunación"></img>
+        </div>
+        <div class="item-content">
+          <h3>Vacunación</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus quisquam qui quasi similique animi, earum
+            aliquid odio, sit distinctio cum officia veniam praesentium asperiores fugit maxime laboriosam est, ut
+            mollitia.</p>
+        </div>
+      </div>
+    </div>
+    <!-- rayos x -->
+    <div class="item features-image col-12 col-md-6 col-lg-3 active">
+      <div class="item-wrapper">
+        <div class="item-img mb-3">
+          <img src="IMG/Servicios/rayos_x.png" alt="Rayos X">
+        </div>
+        <div class="item-content">
+          <h3>Rayos X</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo odio vel incidunt esse numquam cum
+            asperiores, adipisci necessitatibus obcaecati a ex veniam cupiditate? Laudantium, a qui. Culpa, fuga quis.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- emergencias -->
+    <div class="item features-image col-12 col-md-6 col-lg-3 active">
+      <div class="item-wrapper">
+        <div class="item-img mb-3">
+          <img src="IMG/Servicios/emergencias.png" alt="Emergencias"></img>
+        </div>
+        <div class="item-content">
+          <h3>Emergencias</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut nesciunt iste facere animi, ex, porro itaque
+            perferendis omnis reiciendis, excepturi earum qui illum voluptas numquam quidem iusto eveniet totam eaque.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- asesoría reproductiva -->
+    <div class="item features-image col-12 col-md-6 col-lg-3 active">
+      <div class="item-wrapper">
+        <div class="item-img mb-3">
+          <img src="IMG/Servicios/asesoria_nutricional.png" alt="asesoría Nutricional"></img>
+        </div>
+        <div class="item-content">
+          <h3>Asesoría Nutricional</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, maxime in maiores voluptatum ab similique
+            ipsa.
+            Esse illo sunt nam iure aut harum perspiciatis excepturi deserunt, dicta nulla aperiam non.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Farmacia -->
+    <div class="item features-image col-12 col-md-6 col-lg-3 active">
+      <div class="item-wrapper">
+        <div class="item-img mb-3">
+          <img src="IMG/Servicios/medicamentos.png" alt="Farmacia"></img>
+        </div>
+            <div class="item-content">
+        <h3>Farmacia</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi est, odio ad assumenda, amet dicta esse
+          alias,
+          deserunt architecto quaerat impedit similique quasi eveniet maiores atque! Ullam, nihil eveniet. Reiciendis?
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 </body>
 
 </html>
