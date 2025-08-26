@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
-    <title>HVS_principal_prueba</title>
-    <link rel="stylesheet" href="hvs.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+  <title>HVS_principal_prueba</title>
+  <link rel="stylesheet" href="HVS_NI.css">
 </head>
 
 <body>
@@ -17,82 +17,199 @@
 
 <body>
 
-     <IMG src="IMG/nueva portada de la cv.jpg" alt="imagen de fondo"></IMG>
-   
-          <!-- inicio del menu principal -->
+  <!-- inicio del menu principal -->
   <header>
-        <h3>Hospital Veterinario del Sur</h3>
-        <nav class="dropdownmenu">
+    <h2>Hospital Veterinario del Sur</h2>
+    <nav class="dropdownmenu">
 
-            <ul>
-                <li ><a href="index.html">Inicio</a></li>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
 
-                <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
 
-                <li><a href="productos.html">Nuestros Productos</a>
-                    <ul id="submenu">
+        <li><a href="productos.html">Nuestros Productos</a>
+          <ul id="submenu">
 
-                        <li><a href="#">Alimentos</a></li>
-                        <li><a href="#">Medicamentos</a></li>
-                        <li><a href="#">Accesorios</a></li>
-                        <li><a href="#">Laboratorio</a></li>
-                    </ul>
-                </li>
-                <li><a href="contactanos.html">contactanos</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- fin del menu principal -->
-   
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officiis voluptas accusantium similique expedita?
-        Quos illum veniam inventore ipsum pariatur.</p>
+            <li><a href="#">Alimentos</a></li>
+            <li><a href="#">Medicamentos</a></li>
+            <li><a href="#">Accesorios</a></li>
+            <li><a href="#">Laboratorio</a></li>
+          </ul>
+        </li>
+        <li><a href="contactanos.html">contactanos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- fin del menu principal -->
 
-    <h3>Quienes somos</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias iste illo in sit incidunt sequi minus
-        officiis minima expedita illum autem ea facilis quibusdam nesciunt, nisi distinctio odio nostrum!</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1 class="hero-title">Cuidamos de tu mascota como si fuera la nuestra</h1>
+      <p class="hero-subtitle">Servicios veterinarios de calidad con el amor y cuidado que tu compañero merece</p>
 
- 
-<div>
-    <h3>Galería</h3>
-    <p>Explora nuestra galería de imágenes para conocer más sobre nuestros servicios y productos.</p>
-</div>
-
-<!-- menu de imagenes en movimiento -->
-<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
-      <img src="IMG/pruebas/dg1.png" class="d-block w-100" alt="...">
     </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="IMG/pruebas/dg2.png" class="d-block w-100" alt="...">
+  </section>
+  <!-- fin de hero section -->
+
+  <!-- Servicios -->
+  <section class="services">
+    <div class="container">
+      <h2 class="section-title">Nuestros Servicios</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-img">
+            <img
+              src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+              alt="Consulta veterinaria">
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Consultas General</h3>
+            <p>Revisiones completas, diagnóstico y tratamiento para mantener a tu mascota saludable.</p>
+            <a href="#" class="btn btn-secondary">Más información</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img">
+            <img
+              src="IMG/Nueva carpeta/5fa44ee786479.jpeg">
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Vacunación</h3>
+            <p>Programa completo de vacunación para proteger a tu mascota de enfermedades.</p>
+            <a href="#" class="btn btn-secondary">Más información</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img">
+            <img
+              src="https://images.unsplash.com/photo-1596272875729-ed2ff7d6d9c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+              alt="Cirugía">
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Cirugía</h3>
+            <p>Procedimientos quirúrgicos con tecnología de vanguardia y los más altos estándares.</p>
+            <a href="#" class="btn btn-secondary">Más información</a>
+          </div>
+        </div>
+        
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="IMG/pruebas/dg3.png" class="d-block w-100" alt="...">
+  </section>
+  <!-- fin de servicios -->
+
+  <!-- Testimonios -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Llevo a mi perro Max desde hace años y siempre recibe el mejor trato. Los
+            veterinarios son expertos y realmente se preocupan por los animales."</p>
+          <div class="testimonial-author">
+            <div class="author-img">
+              <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Cliente">
+            </div>
+            <div>
+              <h4>María González</h4>
+              <p>Dueña de Max</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Cuando mi gata Luna se enfermó, la atendieron de inmediato. El personal es muy
+            amable y profesional. ¡Totalmente recomendados!"</p>
+          <div class="testimonial-author">
+            <div class="author-img">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente">
+            </div>
+            <div>
+              <h4>Carlos Rodríguez</h4>
+              <p>Dueño de Luna</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Servicio excepcional. Me explicaron todo el proceso del tratamiento de mi conejo
+            de manera clara y con mucho cuidado. Muy agradecida."</p>
+          <div class="testimonial-author">
+            <div class="author-img">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente">
+            </div>
+            <div>
+              <h4>Ana Martínez</h4>
+              <p>Dueña de Snowball</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-<!-- fin de imagenes en movimiento -->
+  </section>
 
-<p style="margin-top: 15px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, vero repudiandae nemo earum assumenda beatae modi cupiditate quis quibusdam eveniet, nobis in quas repellat, consectetur inventore ullam ad nesciunt amet perferendis id! Odio labore nobis veritatis, voluptate libero nesciunt eum vel officiis optio autem quis asperiores recusandae placeat, quidem amet?</p>
+  <!-- fin de testimonios -->
 
-<p style="margin-top: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nobis minus nulla voluptate deleniti itaque ut natus. Inventore, voluptas reiciendis? Rerum, dicta sint vitae nam debitis, dolorum fugit voluptatem voluptatibus modi ducimus esse hic consequuntur dolore laborum molestias sed reiciendis fuga quis assumenda, quod tempora iusto dolorem? Culpa et quos veniam cupiditate, esse dolor accusamus, temporibus neque quisquam ipsam sed?</p>
+<!-- nuestra mision -->
+  <section class="mision-empresa">
+    <div class="contenedor-mision">
+      <h2>Nuestra Misión</h2>
+      <p>En el Hospital Veterinario del Sur, nuestra misión es proporcionar atención veterinaria integral y de calidad, asegurando el bienestar de cada mascota que atendemos. Nos comprometemos a ofrecer un servicio compasivo y profesional, trabajando en estrecha colaboración con los dueños para promover la salud y felicidad de sus animales.</p>
+    </div>
+  </section>
 
-
-<section class="vision-empresa">
+  <!-- nuestra visión -->
+  <section class="vision-empresa">
     <div class="contenedor-vision">
-    <h2>Nuestra Visión</h2>
-    <p>En el Hospital Veterinario del Sur, nuestra visión es ser líderes en atención veterinaria, proporcionando servicios de la más alta calidad y promoviendo el bienestar animal en nuestra comunidad.</p>
-</div>
-</section>
+      <h2>Nuestra Visión</h2>
+      <p>En el Hospital Veterinario del Sur, nuestra visión es ser líderes en atención veterinaria, proporcionando
+        servicios de la más alta calidad y promoviendo el bienestar animal en nuestra comunidad.</p>
+    </div>
+  </section>
+  <!-- fin de nuestra visión -->
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <div class="container">
+      <h2 class="cta-title">¿Necesitas ayuda para tu mascota?</h2>
+      <p class="cta-text">Agenda una cita con nosotros y bríndale a tu compañero la atención que se merece. Nuestro
+        equipo de profesionales está listo para ayudarte.</p>
+      <a href="#" class="btn">Solicitar cita ahora</a>
+    </div>
+  </section>
+  <!-- fin de call to action -->
+
+<!-- Botón flotante de WhatsApp -->
+    <div class="whatsapp-btn" id="whatsappButton">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <!-- Selector de sucursal -->
+    <div class="sucursal-selector" id="sucursalSelector">
+        <button class="close-btn" id="closeSelector">&times;</button>
+        <div class="sucursal-header">Elige una sucursal</div>
+        
+        <div class="sucursal-option" data-number="50494367413" data-sucursal="Choluteca">
+            <i class="fas fa-store"></i>
+            <div>
+                <div class="sucursal-name">Sucursal Choluteca</div>
+                <div class="sucursal-number">+504 9436-7413</div>
+            </div>
+        </div>
+        
+        <div class="sucursal-option" data-number="50495619087" data-sucursal="San Lorenzo">
+            <i class="fas fa-store"></i>
+            <div>
+                <div class="sucursal-name">Sucursal San Lorenzo</div>
+                <div class="sucursal-number">+504 9561-9087</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="whatsapp-button.js"></script>
 
 </body>
 

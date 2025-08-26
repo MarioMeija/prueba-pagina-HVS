@@ -20,7 +20,6 @@ header {
   /* Safari */
   position: sticky;
   top: 0;
-
 }
 
 .dropdownmenu ul,
@@ -58,7 +57,8 @@ header {
 }
 
 .dropdownmenu ul li a {
-  transform: 0.3s, background-color 0.3s ease;
+  transform: 0.3s, 
+  background-color 0.3s ease;
 }
 
 .dropdownmenu ul li a:hover {
