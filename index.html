@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
   <title>HVS_principal_prueba</title>
-  <link rel="stylesheet" href="HVS_NI.css">
+  <link rel="stylesheet" href="HVS_NuevoMenu.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <script src="boton.js"></script>
+
+
 </head>
 
 <body>
@@ -52,16 +56,14 @@
   </section>
   <!-- fin de hero section -->
 
-  <!-- Servicios -->
+  <!---------------------------------------------------------- Servicios ------------------------------------------------------------------>
   <section class="services">
     <div class="container">
       <h2 class="section-title">Nuestros Servicios</h2>
       <div class="services-grid">
         <div class="service-card">
           <div class="service-img">
-            <img
-              src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-              alt="Consulta veterinaria">
+            <img src="IMG/Nueva carpeta/laboratorio-veterinario-boiro.jpg" alt="Consulta veterinaria">
           </div>
           <div class="service-content">
             <h3 class="service-title">Consultas General</h3>
@@ -72,8 +74,7 @@
 
         <div class="service-card">
           <div class="service-img">
-            <img
-              src="IMG/Nueva carpeta/5fa44ee786479.jpeg">
+            <img src="IMG/Nueva carpeta/5fa44ee786479.jpeg">
           </div>
           <div class="service-content">
             <h3 class="service-title">Vacunación</h3>
@@ -94,11 +95,44 @@
             <a href="#" class="btn btn-secondary">Más información</a>
           </div>
         </div>
-        
+        <!-- Servicios----------------------------------- - 2 - -------------------------------------->
+        <div class="service-card">
+          <div class="service-img">
+            <img src="IMG/Nueva carpeta/perro-laboratorio-veterinario.jpg" alt="Consulta veterinaria">
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Laboratorio</h3>
+            <p>Revisiones completas, diagnóstico y tratamiento para mantener a tu mascota saludable.</p>
+            <a href="#" class="btn btn-secondary">Más información</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img">
+            <img src="IMG/Nueva carpeta/farmacia.jpg">
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Farmacia</h3>
+            <p>Programa completo de vacunación para proteger a tu mascota de enfermedades.</p>
+            <a href="#" class="btn btn-secondary">Más información</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img">
+            <img src="IMG/Nueva carpeta/hospital-forman-tambien-futuros-veterinarios_98 (1).webp" alt="Cirugía">
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Emergencia</h3>
+            <p>Procedimientos quirúrgicos con tecnología de vanguardia y los más altos estándares.</p>
+            <a href="#" class="btn btn-secondary">Más información</a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
-  <!-- fin de servicios -->
+  <!------------------------------------------------------ fin de servicios ----------------------------------------------------------------->
 
   <!-- Testimonios -->
   <section class="testimonials">
@@ -152,11 +186,14 @@
 
   <!-- fin de testimonios -->
 
-<!-- nuestra mision -->
+  <!-- nuestra mision -->
   <section class="mision-empresa">
     <div class="contenedor-mision">
       <h2>Nuestra Misión</h2>
-      <p>En el Hospital Veterinario del Sur, nuestra misión es proporcionar atención veterinaria integral y de calidad, asegurando el bienestar de cada mascota que atendemos. Nos comprometemos a ofrecer un servicio compasivo y profesional, trabajando en estrecha colaboración con los dueños para promover la salud y felicidad de sus animales.</p>
+      <p>En el Hospital Veterinario del Sur, nuestra misión es proporcionar atención veterinaria integral y de calidad,
+        asegurando el bienestar de cada mascota que atendemos. Nos comprometemos a ofrecer un servicio compasivo y
+        profesional, trabajando en estrecha colaboración con los dueños para promover la salud y felicidad de sus
+        animales.</p>
     </div>
   </section>
 
@@ -170,46 +207,194 @@
   </section>
   <!-- fin de nuestra visión -->
 
-  <!-- Call to Action -->
-  <section class="cta">
+  <!---------------------------------------------------------- contactanos ---------------------------------------------------------------->
+
+  <section class="contact" id="contacto">
     <div class="container">
-      <h2 class="cta-title">¿Necesitas ayuda para tu mascota?</h2>
-      <p class="cta-text">Agenda una cita con nosotros y bríndale a tu compañero la atención que se merece. Nuestro
-        equipo de profesionales está listo para ayudarte.</p>
-      <a href="#" class="btn">Solicitar cita ahora</a>
+      <h2 class="contact-section-title">Contáctanos</h2>
+      <p class="contact-text">Estamos aquí para ayudarte. Elige una sucursal para más información.</p>
+
+      <!-- Botones de selección de sucursal -->
+      <div class="branch-selector">
+        <button class="branch-btn active" data-branch="sucursal1">
+          <i class="fas fa-map-marker-alt"></i>
+          Sucursal Choluteca
+        </button>
+        <button class="branch-btn" data-branch="sucursal2">
+          <i class="fas fa-map-marker-alt"></i>
+          Sucursal San Lorenzo
+        </button>
+      </div>
+
+      <!-- Contenido Sucursal 1 -->
+      <div class="branch-content active" id="sucursal1">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3 class="contact-titlebox">Sucursal Choluteca</h3>
+            <div class="contact-details">
+              <div class="contact-container">
+                <div class="contact-info-info">
+                  <h2>Información de Contacto</h2>
+
+                  <div class="info-item">
+                    <div class="icon">📍</div>
+                    <div class="info-text">
+                      <h3>Dirección</h3>
+                      <p>B° La Cruz, Calle Colón, Contiguo al mercadito El Milagro, Choluteca, Honduras.</p>
+                    </div>
+                  </div>
+
+                  <div class="info-item">
+                    <div class="icon">📞</div>
+                    <div class="info-text">
+                      <h3>Teléfonos</h3>
+                      <p>Choluteca:+504 9436-7413</p>
+                    </div>
+                  </div>
+
+                  <div class="info-item">
+                    <div class="icon">✉️</div>
+                    <div class="info-text">
+                      <h3>Correo Electrónico</h3>
+                      <p>hveterinariodelsur@gmail.com</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="map-container">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d856.1717339995134!2d-87.19218174261766!3d13.307926066549395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f703d8255a83b25%3A0x2366eeaee0de4576!2sHospital%20Veterinario%20del%20Sur!5e1!3m2!1ses-419!2shn!4v1755752446311!5m2!1ses-419!2shn"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+
+              <div class="business-hours">
+                <h2>Horario de Atención</h2>
+                <table class="hours-table">
+                  <tr>
+                    <td>Lunes - Viernes</td>
+                    <td>8:00 AM - 5:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Sábados</td>
+                    <td>8:00 AM - 1:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Domingos</td>
+                    <td>Cerrado</td>
+                  </tr>
+                  <tr>
+                    <td>Emergencias</td>
+                    <td>24/7</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenido Sucursal 2 -->
+      <div class="branch-content" id="sucursal2">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3 class="contact-titlebox">Sucursal San Lorenzo</h3>
+            <div class="contact-details">
+              <div class="contact-container">
+                <div class="contact-info-info">
+                  <h2>Información de Contacto</h2>
+
+                  <div class="info-item">
+                    <div class="icon">📍</div>
+                    <div class="info-text">
+                      <h3>Dirección</h3>
+                      <p>B. El Centro, contiguo a los jusgados, 52102 San Lorenzo, Valle</p>
+                    </div>
+                  </div>
+
+                  <div class="info-item">
+                    <div class="icon">📞</div>
+                    <div class="info-text">
+                      <h3>Teléfonos</h3>
+                      <p>San Lorenzo: +504 9561-9087</p>
+                    </div>
+                  </div>
+
+                  <div class="info-item">
+                    <div class="icon">✉️</div>
+                    <div class="info-text">
+                      <h3>Correo Electrónico</h3>
+                      <p>hveterinariodelsur@gmail.com</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="map-container">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d719.620692911194!2d-87.44873291566678!3d13.418853964620594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7005b629540e69%3A0x48505a0bff93c404!2sHospital%20Veterinario%20del%20Sur%2C%20San%20Lorenzo%2C%20Valle!5e1!3m2!1ses-419!2shn!4v1760508744464!5m2!1ses-419!2shn"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+
+              <div class="business-hours">
+                <h2>Horario de Atención</h2>
+                <table class="hours-table">
+                  <tr>
+                    <td>Lunes - Viernes</td>
+                    <td>8:00 AM - 4:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Sábados</td>
+                    <td>8:00 AM - 2:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Domingos</td>
+                    <td>Cerrado</td>
+                  </tr>
+
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <!-- fin de call to action -->
+  <footer>
+    <p>© 2018 Hospital y Clínicas Veterinarias del Sur</p>
+    <p>Ejemplo de pagina. Todos los derechos reservados.</p>
+      
+  </footer>
+    <!-- fin de contactanos -->
 
-<!-- Botón flotante de WhatsApp -->
-    <div class="whatsapp-btn" id="whatsappButton">
-        <i class="fab fa-whatsapp"></i>
+  <!-- Botón flotante de WhatsApp -->
+  <div class="whatsapp-btn" id="whatsappButton">
+    <i class="fab fa-whatsapp"></i>
+  </div>
+
+  <!-- Selector de sucursal -->
+  <div class="sucursal-selector" id="sucursalSelector">
+    <button class="close-btn" id="closeSelector">&times;</button>
+    <div class="sucursal-header">Elige una sucursal</div>
+
+    <div class="sucursal-option" data-number="50494367413" data-sucursal="Choluteca">
+      <i class="fas fa-store"></i>
+      <div>
+        <div class="sucursal-name">Sucursal Choluteca</div>
+        <div class="sucursal-number">+504 9436-7413</div>
+      </div>
     </div>
 
-    <!-- Selector de sucursal -->
-    <div class="sucursal-selector" id="sucursalSelector">
-        <button class="close-btn" id="closeSelector">&times;</button>
-        <div class="sucursal-header">Elige una sucursal</div>
-        
-        <div class="sucursal-option" data-number="50494367413" data-sucursal="Choluteca">
-            <i class="fas fa-store"></i>
-            <div>
-                <div class="sucursal-name">Sucursal Choluteca</div>
-                <div class="sucursal-number">+504 9436-7413</div>
-            </div>
-        </div>
-        
-        <div class="sucursal-option" data-number="50495619087" data-sucursal="San Lorenzo">
-            <i class="fas fa-store"></i>
-            <div>
-                <div class="sucursal-name">Sucursal San Lorenzo</div>
-                <div class="sucursal-number">+504 9561-9087</div>
-            </div>
-        </div>
+    <div class="sucursal-option" data-number="50495619087" data-sucursal="San Lorenzo">
+      <i class="fas fa-store"></i>
+      <div>
+        <div class="sucursal-name">Sucursal San Lorenzo</div>
+        <div class="sucursal-number">+504 9561-9087</div>
+      </div>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-    <script src="whatsapp-button.js"></script>
+  </div>
 
 </body>
 

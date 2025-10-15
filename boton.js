@@ -1,3 +1,38 @@
+// --------------------------------------------------------------------------------------------------
+// --------------------------------Cotactanos button Script START------------------------------------
+// --------------------------------------------------------------------------------------------------
+
+// Funcionalidad para los botones de sucursales
+document.addEventListener('DOMContentLoaded', function() {
+    const branchButtons = document.querySelectorAll('.branch-btn');
+    const branchContents = document.querySelectorAll('.branch-content');
+    
+    branchButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const targetBranch = this.getAttribute('data-branch');
+            
+            // Remover clase active de todos los botones y contenidos
+            branchButtons.forEach(btn => btn.classList.remove('active'));
+            branchContents.forEach(content => content.classList.remove('active'));
+            
+            // Agregar clase active al botón clickeado y su contenido correspondiente
+            this.classList.add('active');
+            document.getElementById(targetBranch).classList.add('active');
+        });
+    });
+});
+// --------------------------------------------------------------------------------------------------
+// --------------------------------Cotactanos button Script END------------------------------------
+// --------------------------------------------------------------------------------------------------
+
+
+
+
+// --------------------------------------------------------------------------------------------------
+// --------------------------------WatsApp Button Script START---------------------------------------
+// --------------------------------------------------------------------------------------------------
+
+
 // Detectar si es dispositivo móvil
 function isMobileDevice() {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -73,3 +108,7 @@ function openWhatsApp(number, sucursal) {
     // Abrir en nueva pestaña
     window.open(url, '_blank');
 }
+
+// --------------------------------------------------------------------------------------------------
+// --------------------------------WatsApp Button Script END-----------------------------------------
+// --------------------------------------------------------------------------------------------------

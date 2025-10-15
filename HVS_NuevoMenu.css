@@ -23,7 +23,6 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
 }
-
 a {
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -31,9 +30,6 @@ a {
     font-weight: 700;
     background-color: transparent;
 }
-
-
-
 ul {
     list-style: none;
 }
@@ -43,7 +39,6 @@ ul {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .btn {
     display: inline-block;
     padding: 12px 28px;
@@ -61,22 +56,18 @@ ul {
     transform: translateY(-3px);
     box-shadow: var(--shadow);
 }
-
 .btn-secondary {
     background-color: transparent;
     border: 2px solid var(--primary);
     color: var(--primary);
 }
-
 .btn-secondary:hover {
     background-color: var(--primary);
     color: white;
 }
-
 section {
     padding: 5rem 0;
 }
-
 .section-title {
     text-align: center;
     margin-bottom: 3rem;
@@ -84,7 +75,6 @@ section {
     color: var(--dark);
     position: relative;
 }
-
 .section-title:after {
     content: '';
     display: block;
@@ -94,6 +84,46 @@ section {
     margin: 15px auto;
     border-radius: 2px;
 }
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* ----------------------inicio de CSS para el apartado: Contacto-------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* Sección de Contacto */
+.fondo-contacto {
+  background: var(--text);
+  color: white;
+  padding: 0rem 0;
+  margin: 0rem 0;
+  text-align: center;
+  position: relative;
+}
+ 
+.vision-contacto {
+  color: white;
+  padding: 1rem 1rem;
+  margin: 0rem 0;
+  text-align: center;
+}
+
+.contenedor-vision-contacto {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.vision-contacto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.vision-contacto p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+
+
+/* ----------------------------------------- fin seccion de "contactanos" ---------------------------------------*/
 
 /* ----------Header y Navegación---------- */
 header {
@@ -306,7 +336,7 @@ li:hover ul#submenu {
 
 /* ----------Testimonios---------- */
 .testimonials {
-    background: linear-gradient(to right, var(--primary), var(--primary));
+    background: linear-gradient(to right, var(--primary), var(--dark));
     color: white;
 }
 .testimonials .section-title:after {
@@ -346,10 +376,10 @@ li:hover ul#submenu {
 }
 /* Sección de Misión con fondo especial */
 .mision-empresa {
-  background: var(--text);
+  background: var(--secondary);
   color: white;
   padding: 4rem 2rem;
-  margin: 2rem 0;
+  margin: 0rem 0;
   text-align: center;
 }
 .contenedor-mision {
@@ -371,7 +401,7 @@ li:hover ul#submenu {
   background: var(--dark);
   color: white;
   padding: 4rem 2rem;
-  margin: 2rem 0;
+  margin: 0rem 0;
   text-align: center;
 }
 .contenedor-vision {
@@ -389,25 +419,259 @@ li:hover ul#submenu {
 /* fin de Sección de Visión con fondo especial */
 
 
-/* ----------Call to Action---------- */
-.cta {
+/* -----------------------------------------------------Contactanos----------------------------------------------------------------*/
+/* Selector de Sucursales */
+.contact {
+background-color: var(--text); 
+}
+
+.contact-section-title {
     text-align: center;
-    background: var(--secondary);
-    padding: 4rem 0;
-}
-
-.cta-title {
     font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: var(--dark);
+    margin-bottom: 1rem;
+    color: var(--light);
 }
 
-.cta-text {
-    max-width: 700px;
-    margin: 0 auto 2rem;
-    font-size: 1.2rem;
+.contact-text {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--light);
 }
-/* ----------fin de Call to Action---------- */
+
+.branch-selector {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 8rem;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+}
+
+.branch-btn {
+    padding: 12px 24px;
+    background-color: var(--light);
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.branch-btn:hover {
+    background-color: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.branch-btn.active {
+    background-color: var(--primary);
+    color: white;
+}
+
+/* Contenido de Sucursales */
+.branch-content {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.branch-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .branch-selector {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .branch-btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+  
+}
+
+.contact-titlebox {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--primary);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  background: white;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 10px;
+    background: var(--primary);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-info-info {
+  flex: 1;
+  min-width: 10px;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.info-text p {
+  color: rgb(26, 117, 188);
+  font-size: 1rem;
+  text-align: left;
+}
+
+.contact-info h2 {
+  color: rgb(26, 117, 188);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  padding-bottom: 25px;
+  border-bottom: 3px solid var(--primary);
+}
+
+.info-text h3 {
+  margin-top: 15px;
+  color: rgb(26, 117, 188);
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.icon {
+  min-width: 40px;
+  height: 40px;
+  background-color: #e6f2ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  margin-top: 40px;
+  color: rgb(26, 117, 188);
+  font-size: 25px;
+}
+
+
+
+.map-container {
+  flex: 2;
+  min-width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-top: 50px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 550px;
+  border: none;
+  display: block;
+}
+
+.business-hours {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-top: 20px;
+  font-size: 1.4rem;
+}
+
+.business-hours h2 {
+  color: #1a75bc;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.hours-table {
+  width: 100%;
+  border-collapse: collapse;
+ 
+}
+
+.hours-table tr {
+  border-bottom: 1px solid #eee;
+}
+
+.hours-table tr:last-child {
+  border-bottom: none;
+}
+
+.hours-table td {
+  padding: 12px 0;
+}
+
+.hours-table td:first-child {
+  text-align: center;
+  color: var(--primary);
+}
+
+.hours-table td:last-child {
+  text-align: center;
+  color: var(--primary);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+  background: linear-gradient(to top, black, #666);
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .map-container iframe {
+    height: 350px;
+  }
+}
+/* -----------------------------------------------------Fin Contactanos----------------------------------------------------------- */
+
+
 
 /* ----------BOTON  whatsapp---------- */
 
